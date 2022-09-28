@@ -13,6 +13,22 @@ set the result of this to the supplied 'foundIndex' variable.
 const values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Find the value of 5:
-const foundIndex = null; // Replace null and add .map code here
+const foundIndex = values.find((currentValue, index) => {
+    //console.log('current Index: ', index);
+    if (currentValue === 5) {
+        return true;
+    }
+}) 
 
-console.log(valuesTimesTwo);
+console.log('Found Value: ', foundIndex);
+    // Returns: 
+    //current Index:  0
+    //current Index:  1
+    //current Index:  2
+    //current Index:  3
+    //current Index:  4
+    //current Index:  5
+    //Found Value:  5
+
+
+    

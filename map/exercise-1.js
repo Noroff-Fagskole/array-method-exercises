@@ -14,6 +14,10 @@ you. Set this variable to the .map array method you created.
 
 const values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const valuesTimesTwo = null; // Replace null and add .map code here
+console.log("before map: ", values);
+
+const valuesTimesTwo = values.map((values) => values * 2); // Replace null and add .map code here
 
 console.log(valuesTimesTwo);
+// Returns: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+

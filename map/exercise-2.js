@@ -36,6 +36,9 @@ const people = [
   },
 ];
 
-const greetingMessages = null; // Replace null and add .map code here
+const greetingMessages = people.map(({firstName, lastName}) => {
+  return `Hello ${firstName } ${lastName}!`
+});
 
 console.log(greetingMessages);
+    // Returns:['Hello Ola Nordmann!', 'Hello Kari Nordmann!', 'Hello Nora Nordmann!']
